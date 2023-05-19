@@ -5,14 +5,14 @@ import snapp from '../assets/image/banner/snapp.jpg';
 import train from '../assets/image/banner/train.jpg';
 
 
-export const trip = [
+export const Trip = [
     {id: 1, title: 'خرید انلاین بلیت هواپیما', },
     {id: 2, title: 'رزرو آنلاین هتل', },
     {id: 3, title: 'خرید انلاین بلیت قطار', },
     {id: 4, title: 'خرید انلاین بلیت اتوبوس', },
 ]
 
-export const discount = [
+export const Discount = [
     {id: 1, title: 'خرید محصولات زیبایی و سلامت'},
     {id: 2, title: 'خرید لباس, کیف و کفش'},
     {id: 3, title: 'خرید گوشی, لب تاب و لوازم دیجیتال'},
@@ -27,14 +27,14 @@ export const travel = [
     {id: 4, title: 'معتبر ترین راه برای خرید بلیت'},
 ]
 
-export const hotel = [
+export const Hotel = [
     {id: 1, title: 'رزرو راحت هتل خارجی'},
     {id: 2, title: 'رزرو هتل با پشتیبانی ۲۴ ساعته'},
     {id: 3, title: 'رزرو هتل خارجی با بهترین قیمت'},
     {id: 4, title: 'رزرو مطمین هتل خارجی'},
 ]
 
-export const doctor = [
+export const Doctor = [
     {id: 1, title: 'سفارش انلاین دارو'},
     {id: 2, title: 'مشاوره انلاین با یهترین روانشناسان'},
     {id: 3, title: 'مشاوره ی انلاین با بهترین پزشک ها'},
