@@ -11,7 +11,7 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 const Header =()=>{
     return(
-        <Grid width={'100%'} position={'fixed'} top={'0px'} bgcolor={'white'}>
+        <Grid width={'100%'} position={'fixed'} top={'0px'} bgcolor={'white'} zIndex={'15'}>
             <Grid display={'flex'} justifyContent={'space-between'} p={2} mb={1}>
                 <Grid>
                     <img src={logo} alt="logo" style={{width:'75px',height:'20px'}}/>
