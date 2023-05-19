@@ -13,9 +13,12 @@ const AdvertiseSwiper =()=>{
         <Grid style={{margin:'20px 0'}}>
             <Swiper 
                 style={{
+                    width:'100%',
                     height:227,
+                    borderRadius:'10px',
                 }}
                 loop={true}
+                effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
                 slidesPerView={"auto"}
@@ -31,8 +34,8 @@ const AdvertiseSwiper =()=>{
                 <Grid>
                     {Advertise.map((item)=>(
                         <SwiperSlide>
-                            <Grid>
-                                <img src={item.src} alt='slider' key={item.id} style={{width:'368px', height:'227px', borderRadius:'15px'}}/>
+                            <Grid objectFit={'cover'}>
+                                <img src={item.src} alt='slider' key={item.id} style={{width:'100%', height:'227px'}}/>
                             </Grid>
                         </SwiperSlide>
                     ))}
