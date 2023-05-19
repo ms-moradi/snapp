@@ -1,4 +1,8 @@
-
+import book from '../assets/image/banner/book.jpg';
+import hotel from '../assets/image/banner/hotel.jpg';
+import slider from '../assets/image/banner/slider.jpg';
+import snapp from '../assets/image/banner/snapp.jpg';
+import train from '../assets/image/banner/train.jpg';
 
 
 export const trip = [
@@ -35,4 +39,12 @@ export const doctor = [
     {id: 2, title: 'مشاوره انلاین با یهترین روانشناسان'},
     {id: 3, title: 'مشاوره ی انلاین با بهترین پزشک ها'},
     {id: 4, title: 'خدمات پزشکی در منزل'},
+]
+
+export const Advertise = [
+    {id: 1, src: snapp},
+    {id: 2, src: slider},
+    {id: 3, src: hotel},
+    {id: 4, src: train},
+    {id: 5, src: book},
 ]
