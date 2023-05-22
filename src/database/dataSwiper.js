@@ -4,20 +4,48 @@ import slider from '../assets/image/banner/slider.jpg';
 import snapp from '../assets/image/banner/snapp.jpg';
 import train from '../assets/image/banner/train.jpg';
 
+import food1 from '../assets/image/food/SNAPP-FEKRKON-BANNER-KABAB.jpg';
+import food2 from '../assets/image/food/SNAPP-FEKRKON-BANNER-PIZZA.jpg';
+import food3 from '../assets/image/food/SNAPP-FEKRKkON-BANNER-ASH.jpg';
+import food4 from '../assets/image/food/SNAPP-FEKRKkON-BANNER-GHEYMEH.jpg';
+import foodIcon from '../assets/image/icon/Food.png';
+
+import trip1 from '../assets/image/trip/هتل.jpg';
+import trip2 from '../assets/image/trip/هواپیما.jpg';
+import trip3 from '../assets/image/trip/قطار.jpg';
+import trip4 from '../assets/image/trip/اتوبوس.jpg';
+import hotelIcon from '../assets/image/icon/Hotel.png';
+import airIcon from '../assets/image/icon/snapptrip-flight.png';
+import trainIcon from '../assets/image/icon/snapptrip-train.png';
+import busIcon from '../assets/image/icon/snapptrip-bus.png';
+
+import discount1 from '../assets/image/discount/access.png';
+import discount2 from '../assets/image/discount/cosmetic.jpg';
+import discount3 from '../assets/image/discount/digital.jpg';
+import discount4 from '../assets/image/discount/home.jpg';
+import discount5 from '../assets/image/discount/book.jpg';
+import shopIcon from '../assets/image/icon/Shop.png';
+
+export const Food = [
+    {id: 1, title: "سفارش انواع غذا با اسنپ", src: food1, icon:foodIcon},
+    {id: 2, title: "سفارش انواع غذا با اسنپ", src: food2, icon:foodIcon},
+    {id: 3, title: "سفارش انواع غذا با اسنپ", src: food3, icon:foodIcon},
+    {id: 4, title: "سفارش انواع غذا با اسنپ", src: food4, icon:foodIcon},
+]
 
 export const Trip = [
-    {id: 1, title: 'خرید انلاین بلیت هواپیما', },
-    {id: 2, title: 'رزرو آنلاین هتل', },
-    {id: 3, title: 'خرید انلاین بلیت قطار', },
-    {id: 4, title: 'خرید انلاین بلیت اتوبوس', },
+    {id: 1, title: 'رزرو آنلاین هتل', src: trip1, icon: hotelIcon},
+    {id: 2, title: 'خرید انلاین بلیت هواپیما', src: trip2, icon: airIcon},
+    {id: 3, title: 'خرید انلاین بلیت قطار', src: trip3, icon: trainIcon},
+    {id: 4, title: 'خرید انلاین بلیت اتوبوس', src: trip4, icon: busIcon},
 ]
 
 export const Discount = [
-    {id: 1, title: 'خرید محصولات زیبایی و سلامت'},
-    {id: 2, title: 'خرید لباس, کیف و کفش'},
-    {id: 3, title: 'خرید گوشی, لب تاب و لوازم دیجیتال'},
-    {id: 4, title: 'خرید دکوراسیون و وسایل منزل'},
-    {id: 5, title: 'خرید محصولات فرهنگی و هنری'},
+    {id: 1, title: 'خرید محصولات زیبایی و سلامت', src: discount1, icon: shopIcon},
+    {id: 2, title: 'خرید لباس, کیف و کفش', src: discount2, icon: shopIcon},
+    {id: 3, title: 'خرید گوشی, لب تاب و لوازم دیجیتال', src: discount3, icon: shopIcon},
+    {id: 4, title: 'خرید دکوراسیون و وسایل منزل', src: discount4, icon: shopIcon},
+    {id: 5, title: 'خرید محصولات فرهنگی و هنری', src: discount5, icon: shopIcon},
 ]
 
 export const travel = [
@@ -48,3 +76,4 @@ export const Advertise = [
     {id: 4, src: train},
     {id: 5, src: book},
 ]
+
