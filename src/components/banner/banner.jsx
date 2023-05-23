@@ -1,6 +1,7 @@
 
 
 import Grid from '@mui/material/Grid';
+import Typography  from '@mui/material/Typography';
 import SquareIcon from '@mui/icons-material/Square';
 
 import Card from '../card/card';
