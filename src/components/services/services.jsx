@@ -6,12 +6,14 @@ import Grid from "@mui/material/Grid";
 
 const Services =()=>{
     return(
-        <Grid width={'100%'} display={'flex'} flexWrap={'wrap'} mt={'150px'}>
+        <>
+        <div id='up' style={{width:'300px', height:'140px'}}></div>
+        <Grid width={'100%'} display={'flex'} flexWrap={'wrap'}>
             {Service.map((item)=>(
                 <ServiceIcon key={item.id} src={item.icon} title={item.title}/>
             ))}
-
         </Grid>
+        </>
     )
 }
 
