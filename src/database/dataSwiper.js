@@ -57,6 +57,12 @@ import carousel3 from '../assets/image/installment/Carousel4.jpg';
 import carousel4 from '../assets/image/installment/Carousel1.jpg';
 import carouselIcon from '../assets/image/icon/Insurance.png';
 
+import category1 from '../assets/image/category/category1.jpg';
+import category2 from '../assets/image/category/category2.jpg';
+import category3 from '../assets/image/category/category3.jpg';
+import category4 from '../assets/image/category/category4.jpg';
+import category5 from '../assets/image/category/category5.jpg';
+import categoryIcon from '../assets/image/icon/Market.png';
 
 
 export const Food = [
@@ -116,6 +122,15 @@ export const Carousel = [
     {id: 3, title: 'خرید قسطی با سرویس اغتباری', src: carousel3, icon: carouselIcon},
     {id: 4, title: 'خرید قسطی با سرویس اغتباری', src: carousel4, icon: carouselIcon},
 ]
+
+export const Category =[
+    {id: 1, title: 'تا ۳۰٪ تخفیف', src: category1, icon: categoryIcon},
+    {id: 2, title: 'تا ۳۰٪ تخفیف', src: category2, icon: categoryIcon},
+    {id: 3, title: 'تا ۲۰٪ تخفیف', src: category3, icon: categoryIcon},
+    {id: 4, title: 'تا ۲۵٪ تخفیف', src: category4, icon: categoryIcon},
+    {id: 5, title: 'تا ۳۵٪ تخفیف', src: category5, icon: categoryIcon},
+]
+
 export const Advertise = [
     {id: 1, src: snapp},
     {id: 2, src: slider},
