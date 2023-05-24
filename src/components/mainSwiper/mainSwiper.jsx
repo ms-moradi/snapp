@@ -15,7 +15,7 @@ const MainSwiper =({database, titleBtn})=>{
             <Swiper 
                 style={{
                     width:'100%',
-                    height: '170px',
+                    height: '150px',
                     borderRadius:'10px',
                 }}
                 loop={true}
@@ -23,14 +23,14 @@ const MainSwiper =({database, titleBtn})=>{
                 spaceBetween={'10px'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={"auto"}
+                slidesPerView={"1"}
                 modules={[Navigation]}
             >   
                 <Grid height={'150px'} >
                     <Typography></Typography>
                     <Grid  boxShadow={'0px 5px 10px 0 grey'}>
                         {database.map((item)=>(
-                            <SwiperSlide>
+                            <SwiperSlide style={{marginBottom:'0px'}}>
                                <Card id={item.id} image={item.src} icon={item.icon} title={item.title} titleBtn={titleBtn}/>
                             </SwiperSlide>
                         ))}
