@@ -4,6 +4,7 @@ import ServiceMenu from '../../components/serviceMenu/servicesMenu';
 import AdvertiseSwiper from '../../components/swiper/swiper';
 import ContainerSwiper from '../../components/containerSwiper/containerSwiper';
 import Banner from '../../components/banner/banner';
+import Footer from '../../components/footer/footer';
 
 import { Food } from '../../database/dataSwiper';
 import { Trip } from '../../database/dataSwiper';
@@ -37,6 +38,7 @@ const Home =()=>{
                 <ContainerSwiper header={'با بهترین قیمت پرواز خارجی بخرید'} database={Trip} titleBtn={'بلیت بخرید'} bgColor={'#ff4340'}/>
                 <ContainerSwiper header={'با بهترین قیمت هتل خارجی رزرو کنید'} database={Hotel} titleBtn={'بلیت بخرید'} bgColor={'#ff4340'}/>
                 <ContainerSwiper header={'انلاین, خدمات پزشکی بگیرید'} database={Doctor} titleBtn={'درخواست دهید'} bgColor={'#58C0F9'}/>
+                <Footer/>
             </main>
             
         </>
