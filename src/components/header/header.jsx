@@ -1,3 +1,6 @@
+
+import { Link } from 'react-router-dom';
+
 // import file
 import logo from '../../assets/svg/snappGreen.svg';
 import ItemMenu from '../itemMenu/itemMenu';
@@ -17,13 +20,19 @@ const Header =()=>{
                     <img src={logo} alt="logo" style={{width:'75px',height:'20px'}}/>
                 </Grid>
                 <Grid display={'flex'} justifyContent={'left'} gap={'16px'}>
-                    <CreditCardIcon style={{color:'grey'}}/>
-                    <PersonOutlineIcon style={{color:'grey'}}/>
+                    <Link to="/payment" style={{textDecoration:'none'}}>
+                        <CreditCardIcon style={{color:'grey'}}/>
+                    </Link>
+                    <Link to='/account' style={{textDecoration:'none'}}> 
+                        <PersonOutlineIcon style={{color:'grey'}}/>
+                    </Link>
                 </Grid>
             </Grid>
             <Grid borderBottom={'1px solid grey'} display={'flex'} justifyContent={'space-between'} pb={1} >
                 {MenuHome.map((item)=>(
-                    <ItemMenu src={item.src} title={item.title}/>
+                    <Link to={item.link} style={{textDecoration:'none'}}>
+                        <ItemMenu src={item.src} title={item.title}/>
+                    </Link>
                 ))}
             </Grid>
         </Grid>
