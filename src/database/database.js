@@ -19,9 +19,9 @@ import trip from "../assets/image/icon/Trip.png";
 
 
 export const MenuHome = [
-    {id: 1, title: 'خانه', src:greenHome  },
-    {id: 2, title: '۰امتیاز', src: club },
-    {id: 3, title: 'تخفیف ها ', src: greenVoucher },
+    {id: 1, title: 'خانه', src:greenHome, link:'/' },
+    {id: 2, title: '۰امتیاز', src: club, link:'/club'},
+    {id: 3, title: 'تخفیف ها ', src: greenVoucher, link:'/discount'},
 ]
 
 export const Service = [
