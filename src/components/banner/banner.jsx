@@ -20,7 +20,7 @@ const Banner =({bgColor, header, image , icon , title, titleBtn})=>{
                         <img src={icon} alt='icon' style={{width:'32px', height:'32px'}}/>
                         <Typography fontSize={'12px'}>{title}</Typography>
                     </Grid>
-                    <Grid width={'35%'}>
+                    <Grid width={'35%'} display={'flex'} justifyContent={'flex-end'}>
                         <Button variant="outlined" color={'success'} style={{width:'90px', fontSize:'12px', padding:'5px 10px'}}>{titleBtn}</Button>
                     </Grid>
                 </Grid>
