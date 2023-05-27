@@ -6,6 +6,7 @@ import Club from "../pages/club/club";
 import Discount from "../pages/discount/discount";
 import Payment from "../pages/payment/payment";
 import Account from "../pages/account/account";
+import Layout2 from "../components/layout2/layout2";
 
 const router = createBrowserRouter([
     {
@@ -27,14 +28,23 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path:'/payment',
-        element:<Payment/>
+        element:<Layout2 title={'روش های پرداخت'}/>,
+        children:[
+            {
+                path:'/payment',
+                element:<Payment/>
+            },
+        ]
     },
     {
-        path:'/account',
-        element:<Account/>
-    }
-
+        element:<Layout2 title={'حساب کاربری'}/>,
+        children:[
+            {
+                path:'/account',
+                element:<Account/>
+            },
+        ]
+    },
 ])
 
 export default router;
