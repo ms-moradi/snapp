@@ -31,7 +31,7 @@ const Header =()=>{
             <Grid borderBottom={'1px solid grey'} display={'flex'} justifyContent={'space-between'} pb={1} >
                 {MenuHome.map((item)=>(
                     <Link to={item.link} style={{textDecoration:'none'}}>
-                        <ItemMenu src={item.src} title={item.title}/>
+                        <ItemMenu id={item.id} src={item.src} title={item.title}/>
                     </Link>
                 ))}
             </Grid>
