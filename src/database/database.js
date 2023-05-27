@@ -50,6 +50,6 @@ export const ServiceMenuHome = [
 ]
 
 export const payment=[
-    {id: 1, title:'کیف پول', src: App, element:<RadioButtonCheckedIcon style={{fontSize:16, color:'blue'}}/> },
-    {id: 2, title:'اسنپ کارت', src: cardGift, element:<ArrowBackIosIcon style={{fontSize:14, color:'#757575'}}/>},
+    {id: 1, title:'کیف پول', src: App, element:<RadioButtonCheckedIcon style={{fontSize:16, color:'blue'}}/>, status:true},
+    {id: 2, title:'اسنپ کارت', src: cardGift, element:<ArrowBackIosIcon style={{fontSize:14, color:'#757575'}}/>, link:'/payment/snappCard'},
 ]
