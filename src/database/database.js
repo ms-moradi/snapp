@@ -16,7 +16,11 @@ import oldCredit from "../assets/image/icon/OldCredit.png";
 import pharmacy from "../assets/image/icon/Pharmacy.png";
 import shop from "../assets/image/icon/Shop.png";
 import trip from "../assets/image/icon/Trip.png";
+import App from "../assets/image/logo/App.png";
+import cardGift from "../assets/image/logo/cardGift.png";
 
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 
 export const MenuHome = [
     {id: 1, title: 'خانه', src:greenHome, link:'/' },
@@ -43,4 +47,9 @@ export const ServiceMenuHome = [
     {id: 2, title: 'غذا',         icon: food},
     {id: 3, title: 'سوپر مارکت',  icon: market},
     {id: 4, title: 'اسنپ باکس',    icon: box},
+]
+
+export const payment=[
+    {id: 1, title:'کیف پول', src: App, element:<RadioButtonCheckedIcon style={{fontSize:16, color:'blue'}}/> },
+    {id: 2, title:'اسنپ کارت', src: cardGift, element:<ArrowBackIosIcon style={{fontSize:14, color:'#757575'}}/>},
 ]
