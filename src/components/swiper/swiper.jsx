@@ -33,8 +33,8 @@ const AdvertiseSwiper =()=>{
             > 
                 <Grid>
                     {Advertise.map((item)=>(
-                        <SwiperSlide>
-                            <Grid objectFit={'cover'}>
+                        <SwiperSlide key={item.id}>
+                            <Grid>
                                 <img src={item.src} alt='slider' key={item.id} style={{width:'100%', height:'227px'}}/>
                             </Grid>
                         </SwiperSlide>
