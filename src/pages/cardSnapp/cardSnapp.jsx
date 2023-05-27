@@ -3,6 +3,7 @@
 const CardSnapp =()=>{
     return(
         <>
+            
         </>
     )
 }
