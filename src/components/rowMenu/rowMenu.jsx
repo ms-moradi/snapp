@@ -9,7 +9,7 @@ const RowMenu =({id, icon, title, element})=>{
                 <img src={icon} alt='logo'style={{width:'20px', height:'20px'}}/>
             </Grid>
             <Grid width={'100%'} display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
-                <Typography>{title}</Typography>
+                <Typography sx={{color:'#000'}}>{title}</Typography>
                 {element}
             </Grid>
         </Grid>
