@@ -5,11 +5,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Typography from '@mui/material/Typography';
 
 
-const Header2 =({title})=>{
+const Header2 =({title, link})=>{
     return(
         <Grid width={'100%'} height={'55px'} backgroundColor={'white'} display={'flex'} justifyContent={'flex-start'} alignItems={'center'} boxShadow={'0px 1px 2px 2px #e9e9e9'} position={'fixed'} top={'0px'} p={1}>
             <Grid width={'33%'} textAlign={'start'}>
-                <Link to='/'>
+                <Link to={link}>
                     <ArrowForwardIcon style={{fontSize:20, color:'#757575'}}/>
                 </Link>
             </Grid>
