@@ -58,7 +58,7 @@ const CustomDialog =({open, setOpen})=>{
                             <RemoveIcon/>
                         </IconButton>
                     </Grid>
-                    <CustomButton title={'شارژ حساب'}/>
+                    <CustomButton title={'شارژ حساب'} variant={'contained'}/>
                 </DialogContent>
             </Dialog>
         </Grid>
