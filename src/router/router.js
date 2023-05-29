@@ -8,6 +8,8 @@ import Payment from "../pages/payment/payment";
 import Account from "../pages/account/account";
 import Layout2 from "../components/layout2/layout2";
 import CardSnapp from "../pages/cardSnapp/cardSnapp";
+import Snapp from "../pages/snapp/snapp";
+
 
 const router = createBrowserRouter([
     {
@@ -54,6 +56,10 @@ const router = createBrowserRouter([
                 element:<CardSnapp/>
             }
         ]
+    },
+    {
+        path:'/snapp',
+        element:<Snapp/>
     }
 ])
 
