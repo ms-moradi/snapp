@@ -14,12 +14,9 @@ import Slide from '@mui/material/Slide';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
-
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
-
-
 
 const CustomDialog =({open, setOpen})=>{
 
@@ -63,7 +60,6 @@ const CustomDialog =({open, setOpen})=>{
                     </Grid>
                     <CustomButton title={'شارژ حساب'}/>
                 </DialogContent>
-                
             </Dialog>
         </Grid>
     )
