@@ -10,7 +10,7 @@ const Services =()=>{
         <div id='up' style={{width:'300px', height:'140px'}}></div>
         <Grid width={'100%'} display={'flex'} flexWrap={'wrap'}>
             {Service.map((item)=>(
-                <ServiceIcon key={item.id} src={item.icon} title={item.title}/>
+                <ServiceIcon key={item.id} src={item.icon} title={item.title} link={item?.link}/>
             ))}
         </Grid>
         </>
