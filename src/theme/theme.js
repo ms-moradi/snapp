@@ -71,7 +71,44 @@ const theme = createTheme({
             padding:'18px'
           }
         }
-      }
+      },
+      MuiTextField:{
+        styleOverrides:{
+          root:{
+            direction:'rtl',
+            width:'98%',
+          }
+        }
+      },
+      MuiFormControl:{
+        styleOverrides:{
+          root:{
+            direction:'rtl',
+          }
+        }
+      },
+      MuiFormLabel:{
+        styleOverrides:{
+          root:{
+            direction:'rtl',
+          },
+          colorPrimary:'purple'
+        }
+      },
+      MuiInputLabel:{
+        styleOverrides:{
+          root:{
+            direction:'rtl'
+          },
+          formControl:{
+            direction:'rtl'
+          },
+          outlined:{
+            direction:'rtl'
+          }
+        }
+      },
+     
     }
 })
 
