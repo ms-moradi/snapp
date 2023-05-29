@@ -15,7 +15,7 @@ const Inventory =({setOpen})=>{
                 <Typography> ۰  ریال</Typography>
             </Grid>
             <Grid onClick={handleClickOpen}>
-                <CustomButton title={'افزایش موجودی'}/>
+                <CustomButton title={'افزایش موجودی'} variant={'contained'}/>
             </Grid>
         </Grid>
     )
