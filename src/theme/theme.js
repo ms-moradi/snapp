@@ -25,6 +25,29 @@ const theme = createTheme({
           '@font-face': [iranianSans],
         },
       }
+    },
+    components:{
+      MuiPaper:{
+        styleOverrides:{
+          root:{
+            width:'100%',
+            borderRadius:'0px',
+          },
+        }
+      },
+      MuiDialog:{
+        styleOverrides:{
+          container:{
+            position:'fixed',
+            bottom:'-142px',
+            right:'0px',
+            left:'0px',
+          },
+          paper:{
+            margin:'0px'
+          }
+        }
+      }
     }
 })
 
