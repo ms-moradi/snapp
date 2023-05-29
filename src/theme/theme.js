@@ -39,7 +39,7 @@ const theme = createTheme({
         styleOverrides:{
           container:{
             position:'fixed',
-            bottom:'-142px',
+            bottom:'-118px',
             right:'0px',
             left:'0px',
           },
@@ -62,6 +62,13 @@ const theme = createTheme({
           },
           h6:{
             padding:'8px',
+          }
+        }
+      },
+      MuiDialogContent:{
+        styleOverrides:{
+          root:{
+            padding:'18px'
           }
         }
       }
