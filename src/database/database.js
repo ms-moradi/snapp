@@ -43,7 +43,7 @@ export const Service = [
 ]
 
 export const ServiceMenuHome = [
-    {id: 1, title: 'اسنپ',        icon: cab},
+    {id: 1, title: 'اسنپ',        icon: cab, link:'/snapp'},
     {id: 2, title: 'غذا',         icon: food},
     {id: 3, title: 'سوپر مارکت',  icon: market},
     {id: 4, title: 'اسنپ باکس',    icon: box},
