@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useReducer } from 'react';
+
 import CustomButton from '../button/button';
 
 import Dialog from '@mui/material/Dialog';
@@ -14,15 +16,38 @@ import Slide from '@mui/material/Slide';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
+
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
+function reducer(state, action) {
+    if(action.type === 'increment'){
+        return{
+            counter: state.counter + 10000
+        }
+    }else if(action.type === 'decrement'){
+        return{
+            counter: state.counter - 10000
+        }
+    }
+}
+
 const CustomDialog =({open, setOpen})=>{
+    const [state, dispatch] = useReducer(reducer, {counter: 0})
 
     const handleClose = () => {
         setOpen(false);
     };
+
+    const handleIncrement =()=>{
+        dispatch({type: 'increment'})
+    }
+
+    const handleDecrement =()=>{
+        dispatch({type: 'decrement'})
+    } 
+
     return(
         <Grid>
             <Dialog
@@ -50,11 +75,11 @@ const CustomDialog =({open, setOpen})=>{
                         <Chip label='۵۰۰/۰۰۰ ریال' variant="outlined"></Chip>
                     </Stack>
                     <Grid display={'flex'} justifyContent={'space-between'} alignItems={'center'} gap={'30px'} py={3}>
-                        <IconButton style={{border:'1px solid #757575', borderRadius:'10px'}}>
+                        <IconButton style={{border:'1px solid #757575', borderRadius:'10px'}} onClick={handleIncrement}>
                             <AddIcon/>
                         </IconButton>
-                        <Typography fontSize={'20px'}>سایر مبالغ</Typography>
-                        <IconButton style={{border:'1px solid #757575', borderRadius:'10px'}}>
+                        <Typography fontSize={'20px'}>{state.counter}</Typography>
+                        <IconButton style={{border:'1px solid #757575', borderRadius:'10px'}} onClick={handleDecrement}>
                             <RemoveIcon/>
                         </IconButton>
                     </Grid>
