@@ -9,6 +9,7 @@ import Account from "../pages/account/account";
 import Layout2 from "../components/layout2/layout2";
 import CardSnapp from "../pages/cardSnapp/cardSnapp";
 import Snapp from "../pages/snapp/snapp";
+import AboutSnapp from "../pages/aboutSnapp/aboutSnapp";
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,15 @@ const router = createBrowserRouter([
             {
                 path:'/payment/snappCard',
                 element:<CardSnapp/>
+            }
+        ]
+    },
+    {
+        element:<Layout2 title={'درباره اسنپ!'} link='/account'/>,
+        children:[
+            {
+                path:'/payment/account/aboutSnapp',
+                element:<AboutSnapp/>
             }
         ]
     },
