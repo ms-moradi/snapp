@@ -21,6 +21,10 @@ import cardGift from "../assets/image/logo/cardGift.png";
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
+import StyleIcon from '@mui/icons-material/Style';
+import ErrorIcon from '@mui/icons-material/Error';
+import RuleIcon from '@mui/icons-material/Rule';
+
 
 export const MenuHome = [
     {id: 1, title: 'خانه', src:greenHome, link:'/' },
@@ -52,4 +56,10 @@ export const ServiceMenuHome = [
 export const payment=[
     {id: 1, title:'کیف پول', src: App, element:<RadioButtonCheckedIcon style={{fontSize:16, color:'blue'}}/>, status:true},
     {id: 2, title:'اسنپ کارت', src: cardGift, element:<ArrowBackIosIcon style={{fontSize:14, color:'#757575'}}/>, link:'/payment/snappCard'},
+]
+
+export const MenuAccount = [
+    {id:1, title:'تخفیف ها و جایزه ها', icon:<StyleIcon style={{color:'#455a64'}}/>, link:'/discount'},
+    {id:2, title:'درباره ی اسنپ!', icon:<ErrorIcon style={{color:'#455a64'}}/>, link:'/rules'},
+    {id:3, title:'قوانین و شرایط', icon:<RuleIcon style={{color:'#455a64'}}/>, link:''},
 ]
